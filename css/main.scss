@@ -4,3 +4,21 @@
 .system { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 .cf { clear: both; }
 .tracked-med { letter-spacing: .03em; }
+.bw {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+.anaglyph {
+  animation: .1s ani infinite;
+  filter: drop-shadow(2px 0 1px red) drop-shadow(-2px 0 1px cyan);
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes ani {
+  to {
+    filter: drop-shadow(-2px 0 1px red) drop-shadow(2px 0 1px cyan);
+  }
+}
