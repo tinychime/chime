@@ -1,0 +1,15 @@
+# Site settings
+title: tinychime
+version: "v1"
+description: "Design & Code"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Tachyons Version
+tv: "4.4.2"
+
+# Build settings
+markdown: kramdown
+
+# Exclude this stuff
+exclude: [node_modules, gulpfile.js]
