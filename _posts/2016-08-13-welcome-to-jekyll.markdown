@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Functional CSS & You"
+image:  "/images/work/tc-work-10.png"
+description: ""
 date:   2016-08-13 01:43:32 -0400
 categories: jekyll update
 ---

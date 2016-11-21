@@ -1,12 +1,33 @@
 ---
 layout: default
 ---
-<!-- tag -->
-<h2 class="pv6-ns pv3 f-subheadline-ns f2 lh-solid-ns">A <span class="yellow">team</span> of <span class="blue">designers</span>, <span class="red">engineers</span> &amp; generally <span class="yellow">smart individuals</span> making <span class="blue">internet stuff</span> for the <span class="red">greater good</span>.</h2>
+<script src="/scripts/background.js"></script>
 
-<!-- homepage work -->
-{% for image in site.static_files %}
-    {% if image.path contains 'images/work' %}
-        <img class="mb4-ns mb3 w-100" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-    {% endif %}
-{% endfor %}
+<div class="ma5-ns ma4 absolute">
+  <div class="w-50-ns pr5 lh-copy serif f5 fl">
+    <p class="mt0">Tinychime is the design practice of <a class="link blue dim" href="http://tinychime.github.io/joeletchford">Joe Letchford</a> &amp; <a class="link blue dim" href="http://josh.graphics">Josh Osborne</a>. Together we explore ways in which art, code, journalism &amp; experimentation interact with &amp; enhance one other.</p>
+    <ul class="list pl0 ml0">
+      <h2 class="f5 fw3 i">Us, Lately</h2>
+      <li><a href="" class="link blue dim">Jekyons</a> — a design tool</li>
+      <li><a href="" class="link blue dim">Five Good Things</a> — a weekly email</li>
+    </ul>
+    <ul class="list pl0 ml0">
+      <h2 class="f5 fw3 i">Thoughts</h2>
+      <li><a href="" class="link blue dim">Heady Design Writing</a> – 01/01/2017</li>
+      <li><a href="" class="link blue dim">Cool Project Announcement</a> – 12/27/2017</li>
+      <li><a href="" class="link blue dim">Five Good Things Is Back</a> – 12/22/2016</li>
+      <li><a href="" class="link blue dim">Introducing Tinychime</a> – 12/20/2016</li>
+    </ul>
+    <ul class="list pl0 ml0">
+      <h2 class="f5 fw3 i">Make Contact</h2>
+      <li>+1 (202) 617-5228</li>
+      <li>info@tinychi.me</li>
+    </ul>
+    <ul class="list pl0 ml0">
+      <li class="di mr2"><a href="" class="link blue dim">Twitter</a></li>
+      <li class="di mr2"><a href="" class="link blue dim">Email</a></li>
+      <li class="di mr2"><a href="" class="link blue dim">Github</a></li>
+    </ul>
+  </div>
+  <div class="w-50 fr-ns tr-ns"><img class="right w4" src="/images/tiny-chime-logo.svg"></div>
+</div>

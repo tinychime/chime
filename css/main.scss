@@ -3,22 +3,61 @@
 ---
 .system { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 .cf { clear: both; }
-.tracked-med { letter-spacing: .03em; }
-.bw {
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-  filter: grayscale(100%);
+.tracked-med { letter-spacing: .04em; }
+
+.blue {
+  color: #000DFF;
 }
 
-.anaglyph {
-  animation: .1s ani infinite;
-  filter: drop-shadow(2px 0 1px red) drop-shadow(-2px 0 1px cyan);
-  &:hover {
-    animation-play-state: paused;
+svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#controls{position:absolute;z-index:100;color:white;}
+#controls input[type=range]{background:none;}
+#controls input[type=number]{width:3em}
+label{display:block}
+.dg.ac{z-index:100!important}
+
+.absolute-center {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.w6 {
+  width: 22rem;
+}
+
+// .p-fix {
+//   &:nth-child(1n) {
+//     padding-right: 100px;
+//   }
+// }
+
+.mh-p {
+  min-height: 250px;
+}
+
+.cf-4th {
+  &:nth-child(4n) {
+    margin-right: 0;
+    clear: both;
+    padding-right: 100px;
+  }
+  &:nth-child(3n) {
+    padding-right: 0;
   }
 }
 
-@keyframes ani {
-  to {
-    filter: drop-shadow(-2px 0 1px red) drop-shadow(2px 0 1px cyan);
+.p-fix {
+  &:nth-child(2n) {
+    padding-right: 0;
+    margin-right: 0;
   }
 }

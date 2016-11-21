@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<div class="tracked-med mv6">
-  <div class="w-75-ns mb6 fl">
-    <h2 class="f1-ns f2 mt0 lh-solid-ns">We accept U.S. Dollars in exchange for art, code and other services.</h2>
-    <p class="f4 lh-copy">Our team can adapt to take on just about any project. The core team is made up of two designers and can morph into a full fledged product team in a matter of a couple of phone calls. Right now we're interested in working with artists, musicians, non-profits &amp; other designers to build next-level brands &amp; websites.<p>
-  </div>
-  <!-- <img class="w-25 bw tint fl" src="/images/jandk.gif">
-  <img class="w-25 bw tint fl" src="/images/jandk.gif"> -->
+<div class="">
+{% for image in site.static_files %}
+    {% if image.path contains 'images/work' %}
+        <img class="w-100 mb0 pb0" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
 </div>
