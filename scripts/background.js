@@ -9,7 +9,7 @@ function init() {
   scene = new THREE.Scene();
 
   camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-  camera.position.z = 300;
+  camera.position.z = 150;
 
   geometry = new THREE.BoxGeometry( 200, 200, 200 );
   material = new THREE.MeshBasicMaterial( { color: "rgb(0, 0, 0)", wireframe: true } );

@@ -1,5 +1,6 @@
 # Site settings
 title: tinychime 🔔
+description:
 version: "v1"
 tagline: "Design & Code"
 baseurl: "" # the subpath of your site, e.g. /blog
